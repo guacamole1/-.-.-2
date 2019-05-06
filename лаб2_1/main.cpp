@@ -5,24 +5,24 @@
 using namespace std;
 
 int main() {
-	setlocale(LC_ALL, "ru"); //локализация
+	setlocale(LC_ALL, "ru"); //Р»РѕРєР°Р»РёР·Р°С†РёСЏ
 	srand(time(NULL));
 
 	int size = rand() % 7 + 3;
 	Queue a(size);
 	Queue b(size);
-	int menu; //переменная для switch
+	int menu; //РїРµСЂРµРјРµРЅРЅР°СЏ РґР»СЏ switch
 	bool flag = true; 
 
 	while (flag)
 	{
 		system("cls");
-		cout << "Размер очереди: " << a.getSize() << endl << endl;
-		cout << "Объект a:" << endl;
-		a.showQueue(); //показываем очередь а
+		cout << "Р Р°Р·РјРµСЂ РѕС‡РµСЂРµРґРё: " << a.getSize() << endl << endl;
+		cout << "РћР±СЉРµРєС‚ a:" << endl;
+		a.showQueue(); //РїРѕРєР°Р·С‹РІР°РµРј РѕС‡РµСЂРµРґСЊ Р°
 		cout << endl << endl; 
-		cout << "Объект b:" << endl;
-		b.showQueue(); //показываем очередь b
+		cout << "РћР±СЉРµРєС‚ b:" << endl;
+		b.showQueue(); //РїРѕРєР°Р·С‹РІР°РµРј РѕС‡РµСЂРµРґСЊ b
 		cout << endl << endl;
 
 		cout << "1) b = ++a" << endl;
@@ -30,18 +30,18 @@ int main() {
 		cout << "3) b = --a" << endl;
 		cout << "4) b = a--" << endl;
 		cout << "5) b = !a" << endl;
-		cout << "0) Выход" << endl;
-		cout << "Выберите команду: ";
+		cout << "0) Р’С‹С…РѕРґ" << endl;
+		cout << "Р’С‹Р±РµСЂРёС‚Рµ РєРѕРјР°РЅРґСѓ: ";
 		cin >> menu;
 
 		switch (menu)
 		{
-		case 1:	b = ++a; break; //а и b будут совпадать
-		case 2: b = a++; break; //a изменится, b будет равно старому a
-		case 3: b = --a; break; //а и b будут совпадать
-		case 4: b = a--; break; //a изменится, b будет равно старому a
-		case 5: b = !a; break;  //b будет равно отрицанию a
-		case 0: flag = false; //выход
+		case 1:	b = ++a; break; //Р° Рё b Р±СѓРґСѓС‚ СЃРѕРІРїР°РґР°С‚СЊ
+		case 2: b = a++; break; //a РёР·РјРµРЅРёС‚СЃСЏ, b Р±СѓРґРµС‚ СЂР°РІРЅРѕ СЃС‚Р°СЂРѕРјСѓ a
+		case 3: b = --a; break; //Р° Рё b Р±СѓРґСѓС‚ СЃРѕРІРїР°РґР°С‚СЊ
+		case 4: b = a--; break; //a РёР·РјРµРЅРёС‚СЃСЏ, b Р±СѓРґРµС‚ СЂР°РІРЅРѕ СЃС‚Р°СЂРѕРјСѓ a
+		case 5: b = !a; break;  //b Р±СѓРґРµС‚ СЂР°РІРЅРѕ РѕС‚СЂРёС†Р°РЅРёСЋ a
+		case 0: flag = false; //РІС‹С…РѕРґ
 		}
 	}
 }
