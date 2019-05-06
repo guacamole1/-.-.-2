@@ -3,28 +3,28 @@
 
 using namespace std;
 
-//просто говорим, что значения в классе равны переданным значениям
+//РїСЂРѕСЃС‚Рѕ РіРѕРІРѕСЂРёРј, С‡С‚Рѕ Р·РЅР°С‡РµРЅРёСЏ РІ РєР»Р°СЃСЃРµ СЂР°РІРЅС‹ РїРµСЂРµРґР°РЅРЅС‹Рј Р·РЅР°С‡РµРЅРёСЏРј
 Dimensions::Dimensions(int height, int width, int depth) {
 	this->height = height;
 	this->depth = depth;
 	this->width = width;
 }
 
-// значения из объекта other (объект из которого копируем) заносим в созданный объект (объект в который копируем/созданный объект)
+// Р·РЅР°С‡РµРЅРёСЏ РёР· РѕР±СЉРµРєС‚Р° other (РѕР±СЉРµРєС‚ РёР· РєРѕС‚РѕСЂРѕРіРѕ РєРѕРїРёСЂСѓРµРј) Р·Р°РЅРѕСЃРёРј РІ СЃРѕР·РґР°РЅРЅС‹Р№ РѕР±СЉРµРєС‚ (РѕР±СЉРµРєС‚ РІ РєРѕС‚РѕСЂС‹Р№ РєРѕРїРёСЂСѓРµРј/СЃРѕР·РґР°РЅРЅС‹Р№ РѕР±СЉРµРєС‚)
 Dimensions::Dimensions(const Dimensions & other) {
 	this->height = other.height;
 	this->depth = other.depth;
 	this->width = other.width;
 }
 
-//просто вывод габаритов на экран
+//РїСЂРѕСЃС‚Рѕ РІС‹РІРѕРґ РіР°Р±Р°СЂРёС‚РѕРІ РЅР° СЌРєСЂР°РЅ
 void Dimensions::show() {
-	cout << "Высота: " << height << endl;
-	cout << "Ширина: " << width << endl;
-	cout << "Глубина: " << depth << endl << endl;
+	cout << "Р’С‹СЃРѕС‚Р°: " << height << endl;
+	cout << "РЁРёСЂРёРЅР°: " << width << endl;
+	cout << "Р“Р»СѓР±РёРЅР°: " << depth << endl << endl;
 }
 
-//сравнение типа (ob1 > ob2)
+//СЃСЂР°РІРЅРµРЅРёРµ С‚РёРїР° (ob1 > ob2)
 const bool Dimensions::operator>(const Dimensions & ob2)
 {
 	if (height * width * depth > ob2.height * ob2.width * ob2.depth)
@@ -33,7 +33,7 @@ const bool Dimensions::operator>(const Dimensions & ob2)
 		return false;
 }
 
-//сравнение типа (ob1 > value)
+//СЃСЂР°РІРЅРµРЅРёРµ С‚РёРїР° (ob1 > value)
 const bool Dimensions::operator>(const int value)
 {
 	if (height * width * depth > value)
@@ -42,7 +42,7 @@ const bool Dimensions::operator>(const int value)
 		return false;
 }
 
-//сравнение типа (ob1 < ob2)
+//СЃСЂР°РІРЅРµРЅРёРµ С‚РёРїР° (ob1 < ob2)
 const bool Dimensions::operator<(const Dimensions & ob2)
 {
 	if (height * width * depth < ob2.height * ob2.width * ob2.depth)
@@ -51,7 +51,7 @@ const bool Dimensions::operator<(const Dimensions & ob2)
 		return false;
 }
 
-//сравнение типа (ob1 < value)
+//СЃСЂР°РІРЅРµРЅРёРµ С‚РёРїР° (ob1 < value)
 const bool Dimensions::operator<(const int value)
 {
 	if (height * width * depth < value)
@@ -60,7 +60,7 @@ const bool Dimensions::operator<(const int value)
 		return false;
 }
 
-//сравнение типа (ob1 >= ob2)
+//СЃСЂР°РІРЅРµРЅРёРµ С‚РёРїР° (ob1 >= ob2)
 const bool Dimensions::operator>=(const Dimensions & ob2)
 {
 	if (height * width * depth >= ob2.height * ob2.width * ob2.depth)
@@ -69,7 +69,7 @@ const bool Dimensions::operator>=(const Dimensions & ob2)
 		return false;
 }
 
-//сравнение типа (ob1 >= value)
+//СЃСЂР°РІРЅРµРЅРёРµ С‚РёРїР° (ob1 >= value)
 const bool Dimensions::operator>=(const int value)
 {
 	if (height * width * depth >= value)
@@ -78,7 +78,7 @@ const bool Dimensions::operator>=(const int value)
 		return false;
 }
 
-//сравнение типа (ob1 <= ob2)
+//СЃСЂР°РІРЅРµРЅРёРµ С‚РёРїР° (ob1 <= ob2)
 const bool Dimensions::operator<=(const Dimensions & ob2)
 {
 	if (height * width * depth <= ob2.height * ob2.width * ob2.depth)
@@ -87,7 +87,7 @@ const bool Dimensions::operator<=(const Dimensions & ob2)
 		return false;
 }
 
-//сравнение типа (ob1 <= value)
+//СЃСЂР°РІРЅРµРЅРёРµ С‚РёРїР° (ob1 <= value)
 const bool Dimensions::operator<=(const int value)
 {
 	if (height * width * depth <= value)
