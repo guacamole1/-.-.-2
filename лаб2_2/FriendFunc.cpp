@@ -3,7 +3,7 @@
 
 using namespace std;
 
-//сравнение типа (ob1 != ob2)
+//СЃСЂР°РІРЅРµРЅРёРµ С‚РёРїР° (ob1 != ob2)
 const bool operator!=(const Dimensions & ob1, const Dimensions & ob2)
 {
 	if (ob1.height * ob1.width * ob1.depth != ob2.height * ob2.width * ob2.depth)
@@ -12,19 +12,19 @@ const bool operator!=(const Dimensions & ob1, const Dimensions & ob2)
 		return false;
 }
 
-//сравнение типа (ob1 != value)
+//СЃСЂР°РІРЅРµРЅРёРµ С‚РёРїР° (ob1 != value)
 const bool operator!=(const Dimensions & ob1, const int value)
 {
 	return !(ob1 == value);
 }
 
-//сравнение типа (value != ob1)
+//СЃСЂР°РІРЅРµРЅРёРµ С‚РёРїР° (value != ob1)
 const bool operator!=(const int value, const Dimensions & ob1)
 {
 	return !(value == ob1);
 }
 
-//сравнение типа (ob1 == ob2)
+//СЃСЂР°РІРЅРµРЅРёРµ С‚РёРїР° (ob1 == ob2)
 const bool operator==(const Dimensions & ob1, const Dimensions & ob2)
 {
 	if (ob1.height * ob1.width * ob1.depth == ob2.height * ob2.width * ob2.depth)
@@ -33,7 +33,7 @@ const bool operator==(const Dimensions & ob1, const Dimensions & ob2)
 		return false;
 }
 
-//сравнение типа (ob1 == value)
+//СЃСЂР°РІРЅРµРЅРёРµ С‚РёРїР° (ob1 == value)
 const bool operator==(const Dimensions & ob1, const int value)
 {
 	if (ob1.height * ob1.width * ob1.depth == value)
@@ -42,7 +42,7 @@ const bool operator==(const Dimensions & ob1, const int value)
 		return false;
 }
 
-//сравнение типа (value == ob1)
+//СЃСЂР°РІРЅРµРЅРёРµ С‚РёРїР° (value == ob1)
 const bool operator==(const int value, const Dimensions & ob1)
 {
 	if (value == ob1.height * ob1.width * ob1.depth)
@@ -51,7 +51,7 @@ const bool operator==(const int value, const Dimensions & ob1)
 		return false;
 }
 
-//сравнение типа (value > ob2)
+//СЃСЂР°РІРЅРµРЅРёРµ С‚РёРїР° (value > ob2)
 const bool operator>(const int value, const Dimensions & ob2)
 {
 	if (value > ob2.height * ob2.width * ob2.depth)
@@ -60,7 +60,7 @@ const bool operator>(const int value, const Dimensions & ob2)
 		return false;
 }
 
-//сравнение типа (value >= ob2)
+//СЃСЂР°РІРЅРµРЅРёРµ С‚РёРїР° (value >= ob2)
 const bool operator>=(const int value, const Dimensions & ob2)
 {
 	if (value >= ob2.height * ob2.width * ob2.depth)
@@ -69,7 +69,7 @@ const bool operator>=(const int value, const Dimensions & ob2)
 		return false;
 }
 
-//сравнение типа (value < ob1)
+//СЃСЂР°РІРЅРµРЅРёРµ С‚РёРїР° (value < ob1)
 const bool operator<(const int value, const Dimensions & ob1)
 {
 	if (value < ob1.height * ob1.width * ob1.depth)
@@ -78,7 +78,7 @@ const bool operator<(const int value, const Dimensions & ob1)
 		return false;
 }
 
-//сравнение типа (value <= ob1)
+//СЃСЂР°РІРЅРµРЅРёРµ С‚РёРїР° (value <= ob1)
 const bool operator<=(const int value, const Dimensions & ob1)
 {
 	if (value <= ob1.height * ob1.width * ob1.depth)
