@@ -1,17 +1,17 @@
 #pragma once
 
-//êëàññ Ãàáàðèòû
+//ÐºÐ»Ð°ÑÑ Ð“Ð°Ð±Ð°Ñ€Ð¸Ñ‚Ñ‹
 class Dimensions {
-	int height; //âûñîòà
-	int width; //øèðèíà
-	int depth; //ãëóáèíà
+	int height; //Ð²Ñ‹ÑÐ¾Ñ‚Ð°
+	int width; //ÑˆÐ¸Ñ€Ð¸Ð½Ð°
+	int depth; //Ð³Ð»ÑƒÐ±Ð¸Ð½Ð°
 public:
-	Dimensions() {}; //êîíñòðóêòîð ïî óìîë÷àíèþ (çäåñü îí ïóñòîé)
-	Dimensions(int height, int width = 5, int depth = 10); //êîíñòðóêòîð ñ ïàðàìåòðàìè
-	Dimensions(const Dimensions& other); //êîíñòðóêòîð êîïèðîâàíèÿ
-	void show(); //ìåòîä âûâîäà ãàáàðèòîâ
+	Dimensions() {}; //ÐºÐ¾Ð½ÑÑ‚Ñ€ÑƒÐºÑ‚Ð¾Ñ€ Ð¿Ð¾ ÑƒÐ¼Ð¾Ð»Ñ‡Ð°Ð½Ð¸ÑŽ (Ð·Ð´ÐµÑÑŒ Ð¾Ð½ Ð¿ÑƒÑÑ‚Ð¾Ð¹)
+	Dimensions(int height, int width = 5, int depth = 10); //ÐºÐ¾Ð½ÑÑ‚Ñ€ÑƒÐºÑ‚Ð¾Ñ€ Ñ Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ð°Ð¼Ð¸
+	Dimensions(const Dimensions& other); //ÐºÐ¾Ð½ÑÑ‚Ñ€ÑƒÐºÑ‚Ð¾Ñ€ ÐºÐ¾Ð¿Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ñ
+	void show(); //Ð¼ÐµÑ‚Ð¾Ð´ Ð²Ñ‹Ð²Ð¾Ð´Ð° Ð³Ð°Ð±Ð°Ñ€Ð¸Ñ‚Ð¾Ð²
 
-	//Ìåòîäû êëàññà
+	//ÐœÐµÑ‚Ð¾Ð´Ñ‹ ÐºÐ»Ð°ÑÑÐ°
 	const bool operator > (const Dimensions& ob2);
 	const bool operator > (const int value);
 
@@ -24,7 +24,7 @@ public:
 	const bool operator <= (const Dimensions& ob2);
 	const bool operator <= (const int value);
 
-	//Äðóæåñòâåííûå ôóíêöèè	
+	//Ð”Ñ€ÑƒÐ¶ÐµÑÑ‚Ð²ÐµÐ½Ð½Ñ‹Ðµ Ñ„ÑƒÐ½ÐºÑ†Ð¸Ð¸	
 	friend const bool operator != (const Dimensions& ob1, const Dimensions& ob2);
 	friend const bool operator != (const Dimensions& ob1, const int value);
 	friend const bool operator != (const int value, const Dimensions& ob1);
